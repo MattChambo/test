@@ -224,6 +224,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', end
 	width: 66.66%;
 
 }
+
+/* clearfix for the categories container */
+
+#categories:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -272,10 +281,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', end
 #main-categories ~ ul {
 	list-style: none;
 	padding-left: 20px;
-	background-color: orange;
 	width: 33.33%;
 	float: left;
 	box-sizing: border-box;
+	margin-top: 0;
 }
 
 main {
@@ -288,4 +297,6 @@ main {
 	clear: both;
 }
 
-
+#categories ul:last-child {
+	padding-right: 20px;
+}
